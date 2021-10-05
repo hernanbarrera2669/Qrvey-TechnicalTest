@@ -1,0 +1,4 @@
+"Story","Title","Result","Date","Stability","Duration (s)"
+"Make the purchase of a product and add to shopping cart","Validate a successful purchase","SUCCESS","2021-10-02T20:03:46.899-05:00[America/Bogota]","0.0","15.34"
+"Make the purchase of a product and add to shopping cart","Validate a successful Login","SUCCESS","2021-10-02T21:23:11.586-05:00[America/Bogota]","0.0","40.69"
+"Make the purchase of a product and add to shopping cart","Validate sort for Name (Z to A)","SUCCESS","2021-10-02T21:26:48.436-05:00[America/Bogota]","0.0","14.0"

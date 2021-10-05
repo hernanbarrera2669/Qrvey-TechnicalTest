@@ -1,0 +1,5 @@
+"Story","Title","Result","Date","Stability","Duration (s)"
+"Make the purchase of a product and add to shopping cart","Validate a successful purchase","SUCCESS","2021-10-02T20:03:46.899-05:00[America/Bogota]","0.0","15.34"
+"Make the purchase of a product and add to shopping cart","Validate a successful Login","SUCCESS","2021-10-03T15:11:33.585-05:00[America/Bogota]","0.0","29.98"
+"Make the purchase of a product and add to shopping cart","Validate sort for Name (Z to A)","SUCCESS","2021-10-03T15:12:04.347-05:00[America/Bogota]","0.0","29.06"
+"Make the purchase of a product and add to shopping cart","Validate sort for price low to high and add product to cart","SUCCESS","2021-10-03T15:12:34.164-05:00[America/Bogota]","0.0","45.47"

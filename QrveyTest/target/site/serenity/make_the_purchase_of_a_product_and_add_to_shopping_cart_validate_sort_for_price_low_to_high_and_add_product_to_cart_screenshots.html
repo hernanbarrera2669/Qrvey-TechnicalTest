@@ -1,0 +1,311 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Screenshots</title>
+
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+<link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+<!--[if IE 7]>
+<!--<link rel="stylesheet" href="font-awesome/css/font-awesome-ie7.min.css">-->
+
+<link rel="stylesheet" type="text/css" href="fontawesome-free-5.7.2-web/css/all.min.css">
+<link rel="stylesheet" type="text/css" href="fontawesome-free-5.7.2-web/css/v4-shims.min.css">
+
+<!-- JQuery -->
+<script type="text/javascript" src="scripts/jquery-1.11.1.min.js"></script><link rel="stylesheet" type="text/css" href="chartist/chartist-plugin-tooltip/dist/chartist-plugin-tooltip.min.css">
+<link rel="stylesheet" type="text/css" href="chartist/dist/chartist.min.css">
+<script src="chartist/dist/chartist.min.js"></script>
+<script src="chartist/chartist-plugin-tooltip/dist/chartist-plugin-tooltip.min.js"></script>
+<!-- Required Stylesheets -->
+<link href="bootstrap-treeview/dist/bootstrap-treeview.min.css" rel="stylesheet">
+
+<!-- Required Javascript -->
+<script src="bootstrap-treeview/dist/bootstrap-treeview.min.js"></script><!-- DataTables -->
+<link type="text/css" href="datatables/1.10.20/datatables.min.css" rel="stylesheet" />
+<script type="text/javascript" src="datatables/1.10.20/datatables.min.js"></script>
+<script type="text/javascript" src="datatables/1.10.20/time-elapsed-dhms.js"></script>
+
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<script src="bootstrap/js/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="datatables/1.10.20/datatables.bootstrap4.min.js"></script>
+<link type="text/css" href="datatables/1.10.20/datatables.bootstrap4.min.css" rel="stylesheet" />
+
+<script>
+    jQuery.fn.dataTable.ext.type.order['time-elapsed-dhms-pre'] = function(data) {
+
+        var matches = data.match(/^(\d+(?:\.\d+)?)\s*([a-z]+)/i);
+        var multipliers = {
+            ms: 1,
+            s: 1000,
+            m: 60000,
+            h: 3600000,
+            d: 86400000
+        };
+
+        if (matches) {
+            var multiplier = multipliers[matches[2].toLowerCase()];
+            return parseFloat(matches[1]) * multiplier;
+        } else {
+            return -1;
+        };
+    };
+</script>
+<link rel="stylesheet" href="css/core.css"/>
+<link rel="stylesheet" href="css/link.css"/>
+<link type="text/css" media="screen" href="css/screen.css" rel="Stylesheet"/><!-- Nivo Slider -->
+<link rel="stylesheet" href="nivo-slider/3.2/nivo-slider.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="nivo-slider/3.2/themes/default/default.css" type="text/css" media="screen" />
+<script src="nivo-slider/3.2/jquery.nivo.slider.pack.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+
+        function getUrlVars() {
+            var vars = {};
+            var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function (m, key, value) {
+                vars[key] = value;
+            });
+            return vars;
+        }
+
+        var screenshotIndex = getUrlVars()["screenshot"];
+
+        $(window).load(function () {
+            $('#slider').nivoSlider({
+                startSlide: screenshotIndex,
+                effect: 'fade',
+                animSpeed: 200,
+                manualAdvance: true
+            });
+        });
+
+        $(window).keydown(function(e) {
+            switch(e.which) {
+                case 37:
+                    $('a.nivo-prevNav').click();
+                    break;
+                case 39:
+                    $('a.nivo-nextNav').click();
+                    break;
+            }
+        });
+    </script>
+
+</head>
+
+<body>
+<div id="topheader">
+    <div id="topbanner">
+        <div id="logo"><a href="index.html"><img src="images/serenity-logo.png" border="0"/></a></div>
+        <div id="projectname-banner" style="float:right">
+            <span class="projectname">
+                <span class="projecttitle"></span>
+                <span class="projectsubtitle"></span>
+            </span>
+        </div>
+    </div>
+</div>
+
+<div class="middlecontent">
+    <div id="contenttop">
+        <div class="middlebg">
+            <span class="breadcrumbs">
+                <a href="index.html">Home</a>
+                > <span class="truncate-40"><a
+                    href="feature_make_the_purchase_of_a_product_and_add_to_shopping_cart.html">Make The Purchase Of A Product And Add To Shopping Cart</a></span>
+                > <span class="truncate-60"><a
+                    href="make_the_purchase_of_a_product_and_add_to_shopping_cart_validate_sort_for_price_low_to_high_and_add_product_to_cart.html">Validate sort for price low to high and add product to cart </a></span>
+                > Screenshots
+            </span>
+        </div>
+        <div class="rightbg"></div>
+    </div>
+
+    <div class="clr"></div>
+
+    <!--/* starts second table*/-->
+<div>
+    <ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#"><i class="fa fa-check-square-o"></i> Overall Test Results</a>
+        </li>
+        <li >
+            <a href="capabilities.html"><i class="fa fa-book"></i> Requirements</a>
+        </li>
+        <li >
+            <a href="requirement_type_feature.html"><i class="fa fa-comments-o"></i> Features</a>
+        </li>
+    </ul>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 03-10-2021 15:12</span>
+    <br style="clear:left"/>
+</div>
+
+    <div class="clr"></div>
+
+
+    <div id="contentbody">
+        <div class="titlebar">
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td>
+                            <div>
+                                <h3 class="discreet-story-header">
+                                    <i class="fa fa-2x fa-comments-o"></i>
+                                    <span class="story-header-title">Make The Purchase Of A Product And Add To Shopping Cart </span>
+                                    <span class="badge tag-badge" style="">Feature</span>
+                                </h3>
+
+                                <div class="discreet-requirement-narrative-title">
+                                me as a costumer of Saucedemo<br />
+need search and add products to shopping cart<br />
+to verify a successful purchase
+                                </div>
+                            </div>
+
+                        </td>
+                        <td valign="top" align="right">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td colspan="2" class="test-title-bar">
+                            <span class="outcome-icon"><a href='##beforetable'><i class='fa fa-check-circle-o success-icon fa-2x' title='SUCCESS'></i></a></span>
+                            <span class="test-case-title">
+                                <span class="success-color">Validate sort for price low to high and add product to cart
+                                    <span class="related-issue-title"></span>
+                                </span>
+                            </span>
+
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="clr"></div>
+
+
+    <div id="beforetable"></div>
+    <div id="contenttilttle">
+        <div class="slider-wrapper theme-default">
+            <div id="slider">
+                <img src="6838511048ef6d9741c35a80d26f2e4bb93cce6b43e03d7a2db0216569b9b8e4.png" title=" Given that the costumer enter to the webpage of Saucedemo" width="1920"/>
+                <img src="6838511048ef6d9741c35a80d26f2e4bb93cce6b43e03d7a2db0216569b9b8e4.png" title=" Costumer open web page" width="1920"/>
+                <img src="6838511048ef6d9741c35a80d26f2e4bb93cce6b43e03d7a2db0216569b9b8e4.png" title=" costumer opens the Webpage" width="1920"/>
+                <img src="6838511048ef6d9741c35a80d26f2e4bb93cce6b43e03d7a2db0216569b9b8e4.png" title=" Costumer open web page (completed)" width="1920"/>
+                <img src="6838511048ef6d9741c35a80d26f2e4bb93cce6b43e03d7a2db0216569b9b8e4.png" title=" Given that the costumer enter to the webpage of Saucedemo (completed)" width="1920"/>
+                <img src="91f8882fbbddf740c60454555e244554e8d7f2fd2451773a1eab4f331c10390a.png" title=" When enter the personal data to access
+| user | password |
+| standard_user | secret_sauce |" width="1920"/>
+                <img src="91f8882fbbddf740c60454555e244554e8d7f2fd2451773a1eab4f331c10390a.png" title=" Costumer data user" width="1920"/>
+                <img src="91f8882fbbddf740c60454555e244554e8d7f2fd2451773a1eab4f331c10390a.png" title=" costumer enters 'standard_user' into Specific the user name in this field" width="1920"/>
+                <img src="91f8882fbbddf740c60454555e244554e8d7f2fd2451773a1eab4f331c10390a.png" title=" costumer enters 'secret_sauce' into Specific the password in this field" width="1920"/>
+                <img src="f5dcd718b5c9ced8212c6cf1cb379d0aa0805358529bedce743e1b36c7f3ac78.png" title=" costumer enters 'secret_sauce' into Specific the password in this field (completed)" width="1920"/>
+                <img src="f5dcd718b5c9ced8212c6cf1cb379d0aa0805358529bedce743e1b36c7f3ac78.png" title=" costumer clicks on Clic here allows user to next page" width="1920"/>
+                <img src="df6aefbeda5331936874a9bec22bff0aba54c291179e9f003b61c9ee3cd09456.png" title=" Costumer data user" width="1920"/>
+                <img src="df6aefbeda5331936874a9bec22bff0aba54c291179e9f003b61c9ee3cd09456.png" title=" costumer clicks on Clic here allows user to next page (completed)" width="1920"/>
+                <img src="df6aefbeda5331936874a9bec22bff0aba54c291179e9f003b61c9ee3cd09456.png" title=" When enter the personal data to access
+| user | password |
+| standard_user | secret_sauce | (completed)" width="1920"/>
+                <img src="75af5602c71c19048acbe79b989f1798018db25d1455a9c6cd8845adac0a655b.png" title=" When the user filter by Price (low to high)" width="1920"/>
+                <img src="75af5602c71c19048acbe79b989f1798018db25d1455a9c6cd8845adac0a655b.png" title=" Costumer filter product" width="1920"/>
+                <img src="75af5602c71c19048acbe79b989f1798018db25d1455a9c6cd8845adac0a655b.png" title=" costumer select Price (low to high) on Help to user for choise products" width="1920"/>
+                <img src="75af5602c71c19048acbe79b989f1798018db25d1455a9c6cd8845adac0a655b.png" title=" When the user filter by Price (low to high)" width="1920"/>
+                <img src="75af5602c71c19048acbe79b989f1798018db25d1455a9c6cd8845adac0a655b.png" title=" Costumer filter product (completed)" width="1920"/>
+                <img src="75af5602c71c19048acbe79b989f1798018db25d1455a9c6cd8845adac0a655b.png" title=" Then user could see Sauce Labs Onesie first in the list" width="1920"/>
+                <img src="75af5602c71c19048acbe79b989f1798018db25d1455a9c6cd8845adac0a655b.png" title=" Then verify filter should be 'Sauce Labs Onesie'" width="1920"/>
+                <img src="75af5602c71c19048acbe79b989f1798018db25d1455a9c6cd8845adac0a655b.png" title=" Then user could see Sauce Labs Onesie first in the list (completed)" width="1920"/>
+                <img src="177cae715b480cc47eefec94ac34255c705f37d7da34797ee6c7ce62e6bd7b44.png" title=" When the user add product Sauce Labs Backpack, Sauce Labs Bike Light in the shopping car" width="1920"/>
+                <img src="177cae715b480cc47eefec94ac34255c705f37d7da34797ee6c7ce62e6bd7b44.png" title=" Costumer add product" width="1920"/>
+                <img src="177cae715b480cc47eefec94ac34255c705f37d7da34797ee6c7ce62e6bd7b44.png" title=" costumer clicks on Select the product requiered" width="1920"/>
+                <img src="177cae715b480cc47eefec94ac34255c705f37d7da34797ee6c7ce62e6bd7b44.png" title=" costumer clicks on Select the button add to cart" width="1920"/>
+                <img src="bf11e8778f616b60bbe0a44faad01ead38932f0815e3b0464fd17563e6e95563.png" title=" costumer clicks on Select the button add to cart (completed)" width="1920"/>
+                <img src="bf11e8778f616b60bbe0a44faad01ead38932f0815e3b0464fd17563e6e95563.png" title=" costumer clicks on Select back to products" width="1920"/>
+                <img src="c6c3ecd2dc56de3ccc421c78aa57610199f0522550d06a7717c36b18c8bc3231.png" title=" costumer clicks on Select back to products (completed)" width="1920"/>
+                <img src="c6c3ecd2dc56de3ccc421c78aa57610199f0522550d06a7717c36b18c8bc3231.png" title=" costumer clicks on Select the product requiered" width="1920"/>
+                <img src="2f42c48a8289a1ba84e87d86bd8ec1e8e17d9107539a6449d9714e9f89752b47.png" title=" costumer clicks on Select the product requiered (completed)" width="1920"/>
+                <img src="2f42c48a8289a1ba84e87d86bd8ec1e8e17d9107539a6449d9714e9f89752b47.png" title=" costumer clicks on Select the button add to cart" width="1920"/>
+                <img src="4668290e1288f09883424b40286b3e627e8777b9488bc0bbe78f1d99e48a3dcc.png" title=" costumer clicks on Select the button add to cart (completed)" width="1920"/>
+                <img src="4668290e1288f09883424b40286b3e627e8777b9488bc0bbe78f1d99e48a3dcc.png" title=" costumer clicks on Select back to products" width="1920"/>
+                <img src="60ad7adf1af66292972938981017bcd202eaffc88b0b747a73fff02b29cb23a3.png" title=" costumer clicks on Select back to products (completed)" width="1920"/>
+                <img src="60ad7adf1af66292972938981017bcd202eaffc88b0b747a73fff02b29cb23a3.png" title=" costumer clicks on Select the shopping cart" width="1920"/>
+                <img src="16c0b474801f1fc9f0ac17b50c1e8bf95a79574c8af684eb54f457e7ace6cccd.png" title=" costumer clicks on Select the shopping cart (completed)" width="1920"/>
+                <img src="16c0b474801f1fc9f0ac17b50c1e8bf95a79574c8af684eb54f457e7ace6cccd.png" title=" Costumer add product (completed)" width="1920"/>
+                <img src="16c0b474801f1fc9f0ac17b50c1e8bf95a79574c8af684eb54f457e7ace6cccd.png" title=" When the user add product Sauce Labs Backpack, Sauce Labs Bike Light in the shopping car (completed)" width="1920"/>
+                <img src="16c0b474801f1fc9f0ac17b50c1e8bf95a79574c8af684eb54f457e7ace6cccd.png" title=" Then the user could see the products in the shopping car" width="1920"/>
+                <img src="16c0b474801f1fc9f0ac17b50c1e8bf95a79574c8af684eb54f457e7ace6cccd.png" title=" Then verify shopping car should be 'Sauce Labs Backpack'" width="1920"/>
+                <img src="16c0b474801f1fc9f0ac17b50c1e8bf95a79574c8af684eb54f457e7ace6cccd.png" title=" Then verify shopping car should be 'Sauce Labs Bike Light'" width="1920"/>
+                <img src="16c0b474801f1fc9f0ac17b50c1e8bf95a79574c8af684eb54f457e7ace6cccd.png" title=" Then the user could see the products in the shopping car (completed)" width="1920"/>
+                <img src="31b7776759c60a5567e11f8199a310f8af5e66ffacc2f5ca79572464b0084929.png" title=" When the user remove the product Sauce Labs Backpack" width="1920"/>
+                <img src="31b7776759c60a5567e11f8199a310f8af5e66ffacc2f5ca79572464b0084929.png" title=" Costumer remove product" width="1920"/>
+                <img src="31b7776759c60a5567e11f8199a310f8af5e66ffacc2f5ca79572464b0084929.png" title=" costumer clicks on Remove the product requiered" width="1920"/>
+                <img src="31b7776759c60a5567e11f8199a310f8af5e66ffacc2f5ca79572464b0084929.png" title=" When the user remove the product Sauce Labs Backpack" width="1920"/>
+                <img src="31b7776759c60a5567e11f8199a310f8af5e66ffacc2f5ca79572464b0084929.png" title=" Costumer remove product (completed)" width="1920"/>
+                <img src="31b7776759c60a5567e11f8199a310f8af5e66ffacc2f5ca79572464b0084929.png" title=" Then the product was removed correctly" width="1920"/>
+                <img src="31b7776759c60a5567e11f8199a310f8af5e66ffacc2f5ca79572464b0084929.png" title=" Then verify product remove should be not 'Sauce Labs Backpack'" width="1920"/>
+                <img src="862e654b71b23d828f553f68b11ccd7c06eed7ee264ff17f3642e6d2ee72752b.png" title=" When the user end the purchase and buy a product
+| name | lastName | zipCode |
+| Hernan | Barrera | 5000 |" width="1920"/>
+                <img src="862e654b71b23d828f553f68b11ccd7c06eed7ee264ff17f3642e6d2ee72752b.png" title=" Costumer do checkout" width="1920"/>
+                <img src="862e654b71b23d828f553f68b11ccd7c06eed7ee264ff17f3642e6d2ee72752b.png" title=" costumer clicks on " width="1920"/>
+                <img src="862e654b71b23d828f553f68b11ccd7c06eed7ee264ff17f3642e6d2ee72752b.png" title=" costumer enters 'Hernan' into " width="1920"/>
+                <img src="543d9e374a4fdea47c3234a202869606858c21b5acb3887fdbf80ff03493acfe.png" title=" costumer enters 'Hernan' into  (completed)" width="1920"/>
+                <img src="543d9e374a4fdea47c3234a202869606858c21b5acb3887fdbf80ff03493acfe.png" title=" costumer enters 'Barrera' into " width="1920"/>
+                <img src="02d9d5023bd8b916aafabd1ec74293bb2d2d5bb8baacafc3bcc7584d95349ac0.png" title=" costumer enters 'Barrera' into  (completed)" width="1920"/>
+                <img src="02d9d5023bd8b916aafabd1ec74293bb2d2d5bb8baacafc3bcc7584d95349ac0.png" title=" costumer enters '5000' into " width="1920"/>
+                <img src="93399f7e5a7612e8ccc83684595e304e2746f0abf24e6534a4f61d0bcb6175c0.png" title=" costumer enters '5000' into  (completed)" width="1920"/>
+                <img src="93399f7e5a7612e8ccc83684595e304e2746f0abf24e6534a4f61d0bcb6175c0.png" title=" costumer clicks on " width="1920"/>
+                <img src="950545ec98cd4eca5c844bebdbd7022cabe5e3e1bf69354cf7df6835ba3ba138.png" title=" costumer clicks on  (completed)" width="1920"/>
+                <img src="950545ec98cd4eca5c844bebdbd7022cabe5e3e1bf69354cf7df6835ba3ba138.png" title=" costumer clicks on " width="1920"/>
+                <img src="4b5a4adf1b83012b00864539b62ec9815d39c4443046a444041a52928eb7c9b3.png" title=" Costumer do checkout" width="1920"/>
+                <img src="4b5a4adf1b83012b00864539b62ec9815d39c4443046a444041a52928eb7c9b3.png" title=" costumer clicks on  (completed)" width="1920"/>
+                <img src="4b5a4adf1b83012b00864539b62ec9815d39c4443046a444041a52928eb7c9b3.png" title=" When the user end the purchase and buy a product
+| name | lastName | zipCode |
+| Hernan | Barrera | 5000 | (completed)" width="1920"/>
+                <img src="4b5a4adf1b83012b00864539b62ec9815d39c4443046a444041a52928eb7c9b3.png" title=" Then the user can see the message Thank you for your order" width="1920"/>
+                <img src="4b5a4adf1b83012b00864539b62ec9815d39c4443046a444041a52928eb7c9b3.png" title=" Then verify message checkout should be 'THANK YOU FOR YOUR ORDER'" width="1920"/>
+                <img src="4b5a4adf1b83012b00864539b62ec9815d39c4443046a444041a52928eb7c9b3.png" title=" Then the user can see the message Thank you for your order (completed)" width="1920"/>
+                <img src="558628f4483db4b290fd522543f460ed1481f7818b6a2dd29b33bd11de39d99a.png" title=" When the user close it's session" width="1920"/>
+                <img src="558628f4483db4b290fd522543f460ed1481f7818b6a2dd29b33bd11de39d99a.png" title=" Costumer close session" width="1920"/>
+                <img src="558628f4483db4b290fd522543f460ed1481f7818b6a2dd29b33bd11de39d99a.png" title=" costumer clicks on " width="1920"/>
+                <img src="558628f4483db4b290fd522543f460ed1481f7818b6a2dd29b33bd11de39d99a.png" title=" costumer clicks on " width="1920"/>
+                <img src="38a505018500d6be13008e464aabba9ead428730ea453126587bfae8e4ac572f.png" title=" costumer clicks on  (completed)" width="1920"/>
+                <img src="38a505018500d6be13008e464aabba9ead428730ea453126587bfae8e4ac572f.png" title=" Costumer close session (completed)" width="1920"/>
+                <img src="38a505018500d6be13008e464aabba9ead428730ea453126587bfae8e4ac572f.png" title=" When the user close it's session (completed)" width="1920"/>
+                <img src="38a505018500d6be13008e464aabba9ead428730ea453126587bfae8e4ac572f.png" title=" Then the user is returned to initial page" width="1920"/>
+                <img src="38a505018500d6be13008e464aabba9ead428730ea453126587bfae8e4ac572f.png" title=" Then verify session closed should be (true): <span class='success-color'>SUCCESS</span>" width="1920"/>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+<div id="beforefooter"></div>
+<div id="bottomfooter">
+    <span class="version">Serenity BDD version 2.2.5</span>
+</div>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Make the purchase of a product and add to shopping cart" tests="3" skipped="0" failures="0" errors="0" timestamp="2021-10-03T20:11:33" hostname="DESKTOP-2M9VV8C" time="106.999">
+  <properties/>
+  <testcase name="Validate a successful Login" classname="Make the purchase of a product and add to shopping cart" time="30.949"/>
+  <testcase name="Validate sort for Name (Z to A)" classname="Make the purchase of a product and add to shopping cart" time="29.833"/>
+  <testcase name="Validate sort for price low to high and add product to cart" classname="Make the purchase of a product and add to shopping cart" time="46.217"/>
+  <system-out><![CDATA[Feature from file:///C:/Users/Juancho/Documents/QrveyTest/src/test/resources/features/purchase_products.feature
+Step argument class io.cucumber.core.gherkin.vintage.GherkinVintageDataTableArgument
+Feature from file:///C:/Users/Juancho/Documents/QrveyTest/src/test/resources/features/purchase_products.feature
+Step argument class io.cucumber.core.gherkin.vintage.GherkinVintageDataTableArgument
+Feature from file:///C:/Users/Juancho/Documents/QrveyTest/src/test/resources/features/purchase_products.feature
+Step argument class io.cucumber.core.gherkin.vintage.GherkinVintageDataTableArgument
+Step argument class io.cucumber.core.gherkin.vintage.GherkinVintageDataTableArgument
+]]></system-out>
+  <system-err><![CDATA[oct 03, 2021 3:11:34 PM org.openqa.selenium.remote.DesiredCapabilities chrome
+INFORMACIÓN: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
+Starting ChromeDriver 94.0.4606.61 (418b78f5838ed0b1c69bb4e51ea0252171854915-refs/branch-heads/4606@{#1204}) on port 28086
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+oct 03, 2021 3:11:37 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFORMACIÓN: Detected dialect: W3C
+[1633291915.912][SEVERE]: Timed out receiving message from renderer: 10.000
+[1633291915.913][WARNING]: screenshot failed, retrying timeout: Timed out receiving message from renderer: 10.000
+oct 03, 2021 3:12:04 PM org.openqa.selenium.remote.DesiredCapabilities chrome
+INFORMACIÓN: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
+Starting ChromeDriver 94.0.4606.61 (418b78f5838ed0b1c69bb4e51ea0252171854915-refs/branch-heads/4606@{#1204}) on port 46119
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+oct 03, 2021 3:12:06 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFORMACIÓN: Detected dialect: W3C
+[1633291944.799][SEVERE]: Timed out receiving message from renderer: 10.000
+[1633291944.800][WARNING]: screenshot failed, retrying timeout: Timed out receiving message from renderer: 10.000
+oct 03, 2021 3:12:34 PM org.openqa.selenium.remote.DesiredCapabilities chrome
+INFORMACIÓN: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
+Starting ChromeDriver 94.0.4606.61 (418b78f5838ed0b1c69bb4e51ea0252171854915-refs/branch-heads/4606@{#1204}) on port 4338
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+oct 03, 2021 3:12:36 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFORMACIÓN: Detected dialect: W3C
+[1633291974.487][SEVERE]: Timed out receiving message from renderer: 10.000
+[1633291974.487][WARNING]: screenshot failed, retrying timeout: Timed out receiving message from renderer: 10.000
+]]></system-err>
+</testsuite>
